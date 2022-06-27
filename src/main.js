@@ -22,8 +22,8 @@ import "./styles/index.less";
 
 // 引入图片
 import imgUrl from "./assets/1.gif";
-let img=document.createElement("img");
-img.src=imgUrl;
+let img = document.createElement("img");
+img.src = imgUrl;
 document.body.appendChild(img);
 
 // 处理图片问题
@@ -32,3 +32,11 @@ document.body.appendChild(img);
 
 // 处理字体图标问题
 import "./assets/fonts/iconfont.css";
+
+
+// 高版本js代码
+class App {
+    static a = 123
+}
+
+console.log(App.a)
