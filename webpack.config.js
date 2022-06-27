@@ -1,7 +1,7 @@
 const path = require("path");
 const HtmlWebpackPlugin = require('html-webpack-plugin');
 const { CleanWebpackPlugin } = require('clean-webpack-plugin');
-
+const { VueLoaderPlugin } = require('vue-loader');
 // 修改入口出口
 module.exports = {
     mode: 'development',
@@ -24,6 +24,7 @@ module.exports = {
         }),
         // 自动清除出口目录内容
         new CleanWebpackPlugin(),
+        new VueLoaderPlugin()
     ],
     // 加载器
     module: {
@@ -70,6 +71,11 @@ module.exports = {
                         presets: ['@babel/preset-env'] // 预设:转码规则(用bable开发环境本来预设的)
                     }
                 }
+            },
+            // 
+            {
+                test: /\.vue$/,
+                loader: 'vue-loader'
             }
         ]
     }

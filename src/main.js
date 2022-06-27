@@ -40,3 +40,12 @@ class App {
 }
 
 console.log(App.a)
+
+// 引入vue文件
+// import Vue from "vue";
+import app from "./app.vue";
+// new Vue({
+//     data:{
+//         name:"app",
+//     }
+// }).$mount("#app")
