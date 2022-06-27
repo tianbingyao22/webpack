@@ -10,6 +10,11 @@ module.exports = {
         path: path.resolve(__dirname, "lib"), // 出口路径 绝对路径
         filename: "index.js" // 出口文件名
     },
+    // devserve服务器配置
+    devServer:{
+        port:3000,
+        open:true,
+    },
     // 插件
     plugins:[
         // 自动生成html文件
