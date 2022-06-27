@@ -24,5 +24,15 @@ module.exports = {
         }),
         // 自动清除出口目录内容
         new CleanWebpackPlugin(),
-    ]
+    ],
+    // 加载器
+    module:{
+        rules:[
+            {
+                test: /\.css$/, // 匹配所有的css文件
+                // 需要用到的loader,从右到左的顺序
+                use: [ "style-loader", "css-loader"],
+            }
+        ]
+    }
 }

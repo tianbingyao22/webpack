@@ -9,3 +9,9 @@ import "./tabs";
 import "./banner";
 // 不识别模块，可以用webpack识别模块
 // 初始化，下载包，配置scripts
+
+
+// 引入css
+import "./styles/index.css"
+// 解决css文件问题
+// 1.下载包 2.webpack.config.js配置
