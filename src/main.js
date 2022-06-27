@@ -15,3 +15,9 @@ import "./banner";
 import "./styles/index.css"
 // 解决css文件问题
 // 1.下载包 2.webpack.config.js配置
+
+
+// 引入less文件
+import "./styles/index.less";
+
+// 引入图片

@@ -28,11 +28,18 @@ module.exports = {
     // 加载器
     module:{
         rules:[
-            {
+            {//css加载器
                 test: /\.css$/, // 匹配所有的css文件
                 // 需要用到的loader,从右到左的顺序
                 use: [ "style-loader", "css-loader"],
-            }
+            },
+            {//less加载器
+                test: /\.less$/, // 匹配所有的css文件
+                // 需要用到的loader,从右到左的顺序
+                use: [ "style-loader", "css-loader","less-loader"],
+            },
+            // 图片问题
+            
         ]
     }
 }
