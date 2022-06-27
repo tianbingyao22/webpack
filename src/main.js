@@ -29,3 +29,6 @@ document.body.appendChild(img);
 // 处理图片问题
 // 1.下载包yarn add url-loader file-loader -D
 // 2.webpack.config.js配置
+
+// 处理字体图标问题
+import "./assets/fonts/iconfont.css";
