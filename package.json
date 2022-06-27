@@ -1,0 +1,15 @@
+{
+  "name": "webpack",
+  "version": "1.0.0",
+  "main": "index.js",
+  "repository": "git@github.com:tianbingyao22/webpack.git",
+  "author": "tianbingyao22 <2242378609@qq.com>",
+  "license": "MIT",
+  "devDependencies": {
+    "webpack": "^5.73.0",
+    "webpack-cli": "^4.10.0"
+  },
+  "script":{
+    "build":"webpack"
+  }
+}
