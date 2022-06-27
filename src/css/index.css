@@ -4,3 +4,6 @@
   background-color: pink;
   color: #fff;
 }
+body {
+  background: url("../assets/logo_small.png") no-repeat center;
+}

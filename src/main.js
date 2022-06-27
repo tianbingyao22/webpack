@@ -21,3 +21,11 @@ import "./styles/index.css"
 import "./styles/index.less";
 
 // 引入图片
+import imgUrl from "./assets/1.gif";
+let img=document.createElement("img");
+img.src=imgUrl;
+document.body.appendChild(img);
+
+// 处理图片问题
+// 1.下载包yarn add url-loader file-loader -D
+// 2.webpack.config.js配置

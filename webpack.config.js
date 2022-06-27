@@ -39,7 +39,17 @@ module.exports = {
                 use: [ "style-loader", "css-loader","less-loader"],
             },
             // 图片问题
-            
+            {
+                test: /\.(png|jpg|gif|jpeg)$/i,
+                use: [
+                    {
+                      loader: 'url-loader',
+                      options: {
+                        limit: 2*1024,
+                      },
+                    },
+                  ],
+              }
         ]
     }
 }
