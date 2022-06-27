@@ -6,10 +6,12 @@
   "author": "tianbingyao22 <2242378609@qq.com>",
   "license": "MIT",
   "devDependencies": {
+    "clean-webpack-plugin": "^4.0.0",
+    "html-webpack-plugin": "^5.5.0",
     "webpack": "^5.73.0",
     "webpack-cli": "^4.10.0"
   },
-  "scripts":{
-    "build":"webpack"
+  "scripts": {
+    "build": "webpack"
   }
 }
